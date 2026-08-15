@@ -1,0 +1,1305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  width: 100%;
+  background: #111827;
+  border-bottom: 1px solid #263248;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  min-height: 75px;
+  padding: 0 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  color: #cbd5e1;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: #818cf8;
+}
+
+.logout-button {
+  background: #ef4444;
+  padding: 11px 22px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+/* =========================
+   GENERAL PAGE
+========================= */
+
+.app-page {
+  min-height: 100vh;
+  background: #0f172a;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 25px;
+}
+
+.page-header {
+  margin-bottom: 35px;
+}
+
+.page-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  color: #94a3b8;
+  font-size: 17px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero-section {
+  background: linear-gradient(
+    135deg,
+    #4338ca,
+    #4f46e5
+  );
+
+  border-radius: 20px;
+  padding: 60px 40px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero-section p {
+  font-size: 18px;
+  color: #e0e7ff;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.stat-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 15px;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.stat-icon {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.stat-card h2 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  color: #cbd5e1;
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard-section {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 15px;
+  padding: 35px;
+}
+
+.dashboard-section h2 {
+  margin-bottom: 12px;
+}
+
+.dashboard-section p {
+  color: #94a3b8;
+}
+
+/* =========================
+   COURSES
+========================= */
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.course-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.course-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.course-card h2 {
+  margin-bottom: 15px;
+}
+
+.course-card p {
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.course-level {
+  display: inline-block;
+  background: #312e81;
+  color: #c7d2fe;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.primary-button {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: #6366f1;
+  color: white;
+  padding: 13px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.primary-button:hover {
+  background: #4f46e5;
+}
+
+.primary-button:disabled {
+  background: #475569;
+  cursor: not-allowed;
+}
+
+/* =========================
+   PRACTICE
+========================= */
+
+.practice-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 15px;
+  padding: 50px;
+  text-align: center;
+}
+
+.practice-card h2 {
+  margin-bottom: 15px;
+}
+
+.practice-card p {
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   PROGRESS
+========================= */
+
+.progress-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.progress-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 15px;
+  padding: 35px;
+  text-align: center;
+}
+
+.progress-card h2 {
+  margin-bottom: 20px;
+}
+
+.progress-number {
+  font-size: 42px;
+  font-weight: bold;
+  color: #818cf8;
+}
+
+/* =========================
+   LOGIN / REGISTER
+========================= */
+
+.auth-page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e1b4b
+  );
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 430px;
+
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 18px;
+
+  padding: 40px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.auth-card h1 {
+  text-align: center;
+  color: #818cf8;
+  margin-bottom: 30px;
+}
+
+.auth-card h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.auth-subtitle {
+  text-align: center;
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #cbd5e1;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 13px;
+
+  border: 1px solid #475569;
+  border-radius: 8px;
+
+  background: #0f172a;
+  color: white;
+
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #6366f1;
+}
+
+.auth-message {
+  margin-bottom: 20px;
+  padding: 12px;
+
+  border-radius: 8px;
+
+  background: #312e81;
+  color: #e0e7ff;
+
+  text-align: center;
+}
+
+.auth-footer {
+  text-align: center;
+  color: #94a3b8;
+  margin-top: 25px;
+}
+
+.auth-footer a {
+  color: #818cf8;
+  font-weight: bold;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .progress-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .navbar-container {
+    height: auto;
+    padding: 20px;
+
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-section h1 {
+    font-size: 32px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-card {
+    padding: 25px;
+  }
+}
+
+/* =====================================================
+   PROGRESS PAGE
+   ===================================================== */
+
+.progress-page {
+  padding: 35px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.progress-header {
+  margin-bottom: 30px;
+}
+
+.progress-header h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.progress-header p {
+  color: #aeb8cc;
+  font-size: 16px;
+}
+
+
+/* SUMMARY */
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 35px;
+}
+
+.summary-card {
+  background: #1e2a3d;
+  border: 1px solid #33415c;
+  border-radius: 16px;
+  padding: 22px;
+  text-align: center;
+}
+
+.summary-icon {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.summary-card h3 {
+  margin: 5px 0;
+}
+
+.summary-number {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.summary-card p {
+  color: #9ba8be;
+  font-size: 13px;
+}
+
+.summary-card.strong {
+  border-top: 4px solid #35d07f;
+}
+
+.summary-card.practice {
+  border-top: 4px solid #f6c344;
+}
+
+.summary-card.weak {
+  border-top: 4px solid #ff5c5c;
+}
+
+.summary-card.recommendations {
+  border-top: 4px solid #8c6cff;
+}
+
+
+/* SECTION */
+
+.progress-section {
+  background: #172238;
+  border: 1px solid #2d3b55;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-title h2 {
+  margin: 0;
+}
+
+.section-title span {
+  color: #9daac0;
+  font-size: 14px;
+}
+
+
+/* TOPICS */
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.topic-card {
+  background: #202d43;
+  border: 1px solid #34435e;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.strong-card {
+  border-left: 4px solid #35d07f;
+}
+
+.practice-card {
+  border-left: 4px solid #f6c344;
+}
+
+.weak-card {
+  border-left: 4px solid #ff5c5c;
+}
+
+.topic-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.topic-top h3 {
+  margin: 0;
+}
+
+.accuracy-badge {
+  background: #343f62;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.course-name {
+  color: #aebbd0;
+}
+
+.topic-card p {
+  color: #c5cede;
+}
+
+
+/* PROGRESS BAR */
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #303b50;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #6366f1;
+  border-radius: 10px;
+}
+
+
+/* RECOMMENDATIONS */
+
+.recommendation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.recommendation-card {
+  background: #202d43;
+  border: 1px solid #34435e;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.recommendation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recommendation-header h3 {
+  margin: 0;
+}
+
+.priority {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.priority.high {
+  background: #5b2428;
+  color: #ff8585;
+}
+
+.priority.medium {
+  background: #594a20;
+  color: #ffd866;
+}
+
+.priority.low {
+  background: #214a37;
+  color: #6ee7a2;
+}
+
+.recommendation-action {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.recommendation-reason {
+  color: #aab6c9;
+}
+
+
+/* LEARNING PATH */
+
+.learning-path {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.path-card {
+  display: flex;
+  gap: 18px;
+  background: #202d43;
+  border: 1px solid #34435e;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.path-number {
+  min-width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #6366f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.path-content {
+  flex: 1;
+}
+
+.path-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.path-header h3 {
+  margin: 0;
+}
+
+.path-level {
+  color: #aebbd0;
+}
+
+.path-content p {
+  color: #d0d7e4;
+}
+
+.path-content small {
+  color: #929fb4;
+}
+
+
+/* EMPTY / ERROR */
+
+.no-data,
+.loading-box,
+.error-box,
+.empty-box {
+  background: #202d43;
+  border: 1px solid #34435e;
+  border-radius: 14px;
+  padding: 25px;
+  text-align: center;
+  color: #aebbd0;
+}
+
+.error-box {
+  border-left: 4px solid #ff5c5c;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .topic-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .progress-page {
+    padding: 20px;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+/* =========================================
+   PROGRESS PAGE
+========================================= */
+
+.progress-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: #0f172a;
+  color: #ffffff;
+}
+
+/* HEADER */
+
+.progress-header {
+  max-width: 1200px;
+  margin: 0 auto 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.progress-header h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+.progress-header p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 16px;
+}
+
+.refresh-button {
+  border: none;
+  background: #6366f1;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.refresh-button:hover {
+  background: #4f46e5;
+  transform: translateY(-1px);
+}
+
+
+/* SUMMARY */
+
+.progress-summary {
+  max-width: 1200px;
+  margin: 0 auto 35px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.summary-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  padding: 22px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.summary-icon {
+  font-size: 30px;
+}
+
+.summary-card h3 {
+  margin: 0 0 5px;
+  font-size: 28px;
+}
+
+.summary-card p {
+  margin: 0;
+  color: #94a3b8;
+}
+
+
+/* SECTIONS */
+
+.progress-section {
+  max-width: 1200px;
+  margin: 0 auto 35px;
+
+  background: #111c30;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 25px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 22px;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+
+/* BADGES */
+
+.green-badge,
+.yellow-badge,
+.red-badge,
+.purple-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.green-badge {
+  background: #064e3b;
+  color: #6ee7b7;
+}
+
+.yellow-badge {
+  background: #713f12;
+  color: #fde68a;
+}
+
+.red-badge {
+  background: #7f1d1d;
+  color: #fecaca;
+}
+
+.purple-badge {
+  background: #4c1d95;
+  color: #ddd6fe;
+}
+
+
+/* TOPIC GRID */
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.topic-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.strong-card {
+  border-left: 4px solid #22c55e;
+}
+
+.practice-card {
+  border-left: 4px solid #eab308;
+}
+
+.weak-card {
+  border-left: 4px solid #ef4444;
+}
+
+.topic-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.topic-top h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.topic-top p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.accuracy {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.strong-accuracy {
+  color: #4ade80;
+}
+
+.practice-accuracy {
+  color: #facc15;
+}
+
+.weak-accuracy {
+  color: #f87171;
+}
+
+
+/* PROGRESS BAR */
+
+.progress-bar {
+  height: 9px;
+  width: 100%;
+  background: #334155;
+  border-radius: 10px;
+  margin: 20px 0 15px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.strong-fill {
+  background: #22c55e;
+}
+
+.practice-fill {
+  background: #eab308;
+}
+
+.weak-fill {
+  background: #ef4444;
+}
+
+.topic-footer {
+  display: flex;
+  justify-content: space-between;
+
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+
+/* NO DATA */
+
+.no-data {
+  padding: 30px;
+  text-align: center;
+  color: #94a3b8;
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+
+/* RECOMMENDATIONS */
+
+.recommendation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.recommendation-card {
+  display: flex;
+  gap: 18px;
+
+  padding: 18px;
+
+  background: #1e293b;
+  border-radius: 12px;
+
+  border: 1px solid #334155;
+}
+
+.recommendation-card.high {
+  border-left: 4px solid #ef4444;
+}
+
+.recommendation-card.medium {
+  border-left: 4px solid #eab308;
+}
+
+.recommendation-card.low {
+  border-left: 4px solid #22c55e;
+}
+
+.recommendation-icon {
+  font-size: 25px;
+}
+
+.recommendation-content {
+  flex: 1;
+}
+
+.recommendation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.recommendation-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.priority-badge {
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 11px;
+  font-weight: 700;
+  background: #334155;
+}
+
+.recommendation-action {
+  margin: 10px 0;
+  color: #e2e8f0;
+}
+
+.recommendation-reason {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+
+/* LEARNING PATH */
+
+.learning-path {
+  display: flex;
+  flex-direction: column;
+}
+
+.path-item {
+  display: flex;
+  position: relative;
+  min-height: 150px;
+}
+
+.path-number {
+  min-width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #6366f1;
+  color: white;
+
+  font-weight: 700;
+
+  z-index: 2;
+}
+
+.path-line {
+  width: 2px;
+  background: #334155;
+
+  position: absolute;
+  left: 20px;
+  top: 42px;
+  bottom: 0;
+}
+
+.path-item:last-child .path-line {
+  display: none;
+}
+
+.path-content {
+  flex: 1;
+  margin-left: 20px;
+  padding-bottom: 30px;
+}
+
+.path-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.path-header h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.level-badge {
+  display: inline-block;
+  background: #312e81;
+  color: #c7d2fe;
+
+  padding: 5px 10px;
+
+  border-radius: 6px;
+
+  font-size: 12px;
+}
+
+.path-action {
+  margin: 12px 0 6px;
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+.path-reason {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+
+/* LOADING */
+
+.loading-box,
+.error-box,
+.empty-box {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 40px;
+
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+
+  text-align: center;
+}
+
+.loading-box h2,
+.error-box h2,
+.empty-box h2 {
+  margin-bottom: 10px;
+}
+
+.loading-box p,
+.error-box p,
+.empty-box p {
+  color: #94a3b8;
+}
+
+.error-box button {
+  margin-top: 15px;
+
+  border: none;
+  background: #6366f1;
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+/* LOADER */
+
+.loader {
+  width: 45px;
+  height: 45px;
+
+  border: 4px solid #334155;
+  border-top-color: #6366f1;
+
+  border-radius: 50%;
+
+  margin: 0 auto 20px;
+
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .progress-page {
+    padding: 20px;
+  }
+
+  .progress-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .topic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .progress-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+  .progress-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .progress-header h1 {
+    font-size: 26px;
+  }
+
+}
